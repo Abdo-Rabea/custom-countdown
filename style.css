@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -8,6 +10,8 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Video Background */
@@ -84,6 +88,10 @@ input {
   border-radius: 20px;
   background: #fff;
   outline: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 /* Button */
@@ -137,13 +145,14 @@ li span {
 
   video {
     margin-top: -1px;
-
     object-position: 80%;
   }
 
   .container {
     min-height: 245px;
     padding: 20px;
+    min-width: unset;
+    width: 95vw;
     margin: 10px;
   }
 
