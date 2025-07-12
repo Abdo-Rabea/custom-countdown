@@ -11,7 +11,7 @@ const countdownReset = document.getElementById("countdown-button");
 const newCountDown = document.getElementById("complete-button");
 
 let countDownTitle = "";
-let countDownDate = Date;
+let countDownDate = new Date();
 let updateDomIntervralId = 0;
 
 // local storage functionalities
@@ -70,8 +70,6 @@ function updateDom() {
       countDownDate.toISOString().split("T")[0]
     }`;
   }
-
-  console.log("updating dom");
 }
 
 function updateCountdown(e) {
