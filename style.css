@@ -68,6 +68,7 @@ h1 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
 /* Form */
@@ -92,6 +93,7 @@ input {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  font-family: Roboto, sans-serif;
 }
 
 /* Button */
@@ -107,10 +109,17 @@ button {
   cursor: pointer;
   outline: none;
 }
-
+button:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
 /* Countdown */
 ul {
-  margin-left: -45px;
+  /* background-color: red; */
+
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 li {
@@ -130,6 +139,29 @@ li span {
 .complete {
   position: relative;
   top: 60px;
+}
+
+.complete-title {
+  animation: complete 2.5s infinite;
+  -webkit-animation: complete 2.5s infinite;
+}
+@keyframes complete {
+  0% {
+    color: rgb(223, 13, 13);
+  }
+  25% {
+    color: rgb(228, 208, 26);
+  }
+  50% {
+    color: rgb(129, 225, 18);
+    scale: 1.4;
+  }
+  75% {
+    color: rgb(16, 77, 191);
+  }
+  100% {
+    color: rgb(80, 21, 218);
+  }
 }
 
 /* Media Query: Large Smartphone (Vertical) */
